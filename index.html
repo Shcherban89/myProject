@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hammock store</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <a href="index.html">
+                    <h2>магазин гамаків</h2>
+                </a>                
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about_us">Про нас</a>
+                    </li>   
+                    <li>
+                        <a href="#catalog">Каталог</a>
+                    </li>   
+                    <li>
+                        <a href="#promotions">Акції</a>
+                    </li>               
+                    <li>
+                        <a href="#contacts">Контакти</a>
+                    </li>   
+                    <li>
+                        <a href="#">Кошик</a>
+                    </li> 
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="cover">
+            </section>   
+            <section id="offers">
+            </section>
+            <section id="catalog">
+            </section>
+            <section id="contacts">
+                <div class="contact">
+                    <h3>SHOWROOM HAMMOCKS STORE</h3>
+                    <p>вул. Шамрила 1,<br>м. Київ, 04112, Україна</p>
+                    <p>+38 (063) 987 89 00</p>
+                    <p>helphammocks.store@gmail.com<p>
+                    </ul>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.473438199093!2d30.441353351338456!3d50.46952937937724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdca0adebde9%3A0x1e574291764fdd7c!2z0J_QsNGA0LrQvtCy0L4t0KHRi9GA0LXRhtC60LDRjyDRg9C7LiwgMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1595110941533!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>             
+            <section id="about_us">
+                <h2>Чому ми кращі</h2>
+                <p>Ми любимо, те що робимо. Ми любимо людей. А люди люблять нас</p>
+                <div class="advantage">
+                    <img src="img/woman_on_hammock.jpg" alt="жінка на гамаку">
+                    <h3>Найкращі матеріали</h3>
+                    <p>В процесі виробництва використані, лише натуральні тканини та деревина. Для максимального комфорту та зручності<p>
+                </div>
+                <div>
+                    <img src="img/hammock_sea.jpg" alt="гамак на пляжі">                
+                    <h3>Великий асортимент</h3>
+                    <p>Різноманітний асортимент товарів, здатен задовольнити різні потреби різних груп людей</p>
+                </div>
+                <div>
+                <div>
+                    <img src="img/hammock_pillow.jpg" alt="гамак з подушкою">
+                    <h3>Приємні ціни</h3>
+                    <p>Тільки найкращі цінові пропозиції, постійні знижки. Ми покликані зробити ваш відпочинок вдома максимально комфортним</p>
+                </div>
+            </section>        
+            <section id="promotions">
+                <h2>Безкоштовна доставка</h2>
+                <div class="counter_promotion">
+                    <div class="counter_days">
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                        <span>днів</span>             
+                    </div>
+                    <div class="counter_hours">
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                        <span>годин</span>             
+                    </div> 
+                    <div class="counter_minutes">
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                        <span>хвилин</span>
+                    </div> 
+                    <div class="counter_seconds">
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                        <span>секунд</span>                                     
+                    </div>                     
+                </div>
+                <p>Зроби замовлення на суму від 1000 грн, та отримай безкоштовну доставку</p>
+                <p>Акція триває до: 1 серпня, 2020 року</p>
+                <button><a href="#catalog">зробити замовлення</a></button>
+            </section>
+            <section id="form_order">
+                <div>
+                    <img src="img/hammock_in_room.jpg" alt="підвісний гамак в кімнаті">
+                </div>
+                <div>
+                    <h2>Хочеш унікальний гамак?</h2>
+                    <p>Залиши свої контактні дані!<br>Ми зв'яжемось з тобою і обговоримо деталі</p>
+                    <form action="https://formspree.io/mdowpvlq" method="POST">
+                        <label for="fname">Твоє ім'я*</label>
+                        <input type="text" id="fname" name="name" required>
+                        <label for="phone_number">Мобільний номер</label>
+                        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{13}" required>
+                        <label for="email">Email*</label>
+                        <input type="text" id="email" name="name" required>
+                        <button type="submit">Відправити</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
