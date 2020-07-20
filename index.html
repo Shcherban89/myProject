@@ -32,28 +32,43 @@
                         <a href="#contacts">Контакти</a>
                     </li>   
                     <li>
-                        <a href="#">Кошик</a>
+                        <button>Кошик</button>
                     </li> 
                 </ul>
             </nav>
         </header>
         <main>
             <section id="covers">
-<!--Як верстати слайдер? ul чи div? кнопку робити як button чи стилізувати  <а href> class = "button"? Картинки у слайдері куди краще поміщати?-->
+<!--Як верстати слайдер? ul чи div? кнопку робити як button чи стилізувати  <а href> class = "button"? -->
                 <div class="cover">
-                    <h1>Hammock store</h1>
-                    <p>знайди ідеальний для тебе</p>
-                    <a class="button" href="#catalog">каталог</a>
+                    <div class="cover_text">
+                        <h1>Hammock store</h1>
+                        <p>знайди ідеальний для тебе</p>
+                        <a class="button" href="#catalog">каталог</a>
+                    </div>
+                    <div class="cover_img">
+                        <img src="img/girl_with_book.jpg" alt="жінка з книгою на гамаку Hammock Store">
+                    </div>
                 </div>
                 <div class="cover">
-                    <h1>Hammock store</h1>
-                    <p>запитай нас, ми завжди на зв'язку</p>
-                    <a class="button" href="#contacts">контакти</a>
+                    <div class="cover_text">
+                        <h1>Hammock store</h1>
+                        <p>запитай нас, ми завжди на зв'язку</p>
+                        <a class="button" href="#contacts">контакти</a>
+                    </div>
+                    <div class="cover_img">
+                        <img src="img/girl_on_hammock.jpg" alt="жінка з книгою на гамаку біля водойми Hammock Store">
+                    </div>
                 </div>
                 <div class="cover">
-                    <h1>Hammock store</h1>
-                    <p>лови гарячі пропозиції</p>
-                    <a class="button" href="#promotions">акції</a>
+                    <div class="cover_text">               
+                        <h1>Hammock store</h1>
+                        <p>лови гарячі пропозиції</p>
+                        <a class="button" href="#promotions">акції</a>
+                    </div>
+                    <div class="cover_img">
+                        <img src="img/couple_on_hammock.jpg" alt="пара на гамаку біля водойми Hammock Store">
+                    </div>
                 </div>
             </section>   
             <section id="offers">
@@ -86,7 +101,7 @@
             <section id="catalog">
                 <h2>Каталог товарів</h2>
                 <p>Тут зібрані найкращі пропозиції. З найкращих матеріалів. Для найкращих людей.</p>
-<!--Каталог товарів краще ul чи div? чи потрібно img поміщатити в div-->
+<!--Каталог товарів краще ul чи div?-->
                 <div class="products">
                     <div class="product_box">
                         <div class="product_image">
@@ -267,7 +282,7 @@
             </section>
         </main>
         <footer>
-            <div id="logo">
+            <div class="logo_footer">
                 <a href="index.html">
                     <img src="img/logo.png" alt="Логотип Hammock store">
                 </a>
