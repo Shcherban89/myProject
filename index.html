@@ -9,15 +9,15 @@
     </head>
     <body>
         <header>
-            <div id="logo">
+            <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="Логотип Hammock store">
                 </a>
                 <a href="index.html">
-                    <h2>магазин гамаків</h2>
+                    <p>магазин гамаків</p>
                 </a>                
             </div>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li>
                         <a href="#about_us">Про нас</a>
@@ -39,63 +39,75 @@
         </header>
         <main>
             <section id="covers">
-<!--Як верстати слайдер? ul чи div? кнопку робити як button чи стилізувати  <а href> class = "button"? -->
-                <div class="cover">
-                    <div class="cover_text">
-                        <h1>Hammock store</h1>
-                        <p>знайди ідеальний для тебе</p>
-                        <a class="button" href="#catalog">каталог</a>
+            <div class="slider">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                    <div class="cover item-1">
+                        <div class="cover_text">
+                            <h1>Hammock store</h1>
+                            <p>знайди ідеальний для тебе</p>
+                            <a class="button" href="#catalog">каталог</a>                    
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-3"></a>
+                        <a class="arrow arrow-next" href="#item-2"></a>  
+<!--                       <div class="cover_img">
+                            <img src="img/girl_with_book.jpg" alt="жінка з книгою на гамаку Hammock Store">
+                        </div> -->
                     </div>
-                    <div class="cover_img">
-                        <img src="img/girl_with_book.jpg" alt="жінка з книгою на гамаку Hammock Store">
+                    <div class="cover item-2">
+                        <div class="cover_text">
+                            <h1>Hammock store</h1>
+                            <p>запитай нас, ми завжди на зв'язку</p>
+                            <a class="button" href="#contacts">контакти</a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-1"></a>
+                        <a class="arrow arrow-next" href="#item-3"></a>
+<!--                    <div class="cover_img">
+                            <img src="img/girl_on_hammock.jpg" alt="жінка з книгою на гамаку біля водойми Hammock Store">
+                        </div>-->
                     </div>
-                </div>
-                <div class="cover">
-                    <div class="cover_text">
-                        <h1>Hammock store</h1>
-                        <p>запитай нас, ми завжди на зв'язку</p>
-                        <a class="button" href="#contacts">контакти</a>
-                    </div>
-                    <div class="cover_img">
-                        <img src="img/girl_on_hammock.jpg" alt="жінка з книгою на гамаку біля водойми Hammock Store">
-                    </div>
-                </div>
-                <div class="cover">
-                    <div class="cover_text">               
-                        <h1>Hammock store</h1>
-                        <p>лови гарячі пропозиції</p>
-                        <a class="button" href="#promotions">акції</a>
-                    </div>
-                    <div class="cover_img">
-                        <img src="img/couple_on_hammock.jpg" alt="пара на гамаку біля водойми Hammock Store">
+                    <div class="cover item-3">
+                        <div class="cover_text">               
+                            <h1>Hammock store</h1>
+                            <p>лови гарячі пропозиції</p>
+                            <a class="button" href="#promotions">акції</a>
+                        </div>
+                            <a class="arrow arrow-prev" href="#item-2"></a>
+                            <a class="arrow arrow-next" href="#item-1"></a>
+<!--                        <div class="cover_img">
+                            <img src="img/couple_on_hammock.jpg" alt="пара на гамаку біля водойми Hammock Store">
+                        </div> -->
                     </div>
                 </div>
             </section>   
             <section id="offers">
                 <h2>Що ми пропонуємо</h2>
-                <div class="offer_box">
-                    <img src="img/hammock_flat.jpg" alt="Гамак у кімнаті">
-                    <div class="offer_text">
-                        <h3>Каталог товарів</h3>
-                        <p>Знайдіть свій  гамак в каталозі.  В нас представлений широкий асортимент товарів бразильського виробника amazonas<p>
-                        <a href="#catalog">перейти до каталогу</a>
+                <div class="container_offer">
+                    <div class="offer_box">
+                        <img src="img/hammock_flat.jpg" alt="Гамак у кімнаті">
+                        <div class="offer_text">
+                            <h3>Каталог товарів</h3>
+                            <p>Знайдіть свій  гамак в каталозі.  В нас представлений широкий асортимент товарів бразильського виробника amazonas<p>
+                            <a href="#catalog">перейти до каталогу</a>
+                        </div>
                     </div>
-                </div>
-                <div class="offer_box">
-                    <img src="img/hammock_plant.jpg" alt="Гамак у кімнаті">
-                    <div class="offer_text">
-                        <h3>Гамак на замовлення</h3>
-                        <p>Створіть свій ідеальний гамак. Ми виготовимо його для вас з найкращих матеріалів і пропрацюємо до найменших деталей.</p>
-                        <a href="#form_order">перейти до замовлення</a>
+                    <div class="offer_box">
+                        <img src="img/hammock_plant.jpg" alt="Гамак у кімнаті">
+                        <div class="offer_text">
+                            <h3>Гамак на замовлення</h3>
+                            <p>Створіть свій ідеальний гамак. Ми виготовимо його для вас з найкращих матеріалів і пропрацюємо до найменших деталей.</p>
+                            <a href="#form_order">перейти до замовлення</a>
+                        </div>
                     </div>
-                </div>
-                <div class="offer_box">
-                    <img src="img/hammock_on_stair.jpg" alt="Гамак на сходах">
-                    <div class="offer_text">
-                        <h3>Акційні пропозиції</h3>
-                        <p>Знайдіть для себе найвигіднішу пропозицію.  Постійні акції та подарунки для наших клієнтів. Не пропустіть</p>
-                        <a href="#promotions">перейти до акцій</a>
-                    </div>
+                    <div class="offer_box">
+                        <img src="img/hammock_on_stair.jpg" alt="Гамак на сходах">
+                        <div class="offer_text">
+                            <h3>Акційні пропозиції</h3>
+                            <p>Знайдіть для себе найвигіднішу пропозицію.  Постійні акції та подарунки для наших клієнтів. Не пропустіть</p>
+                            <a href="#promotions">перейти до акцій</a>
+                        </div>
+                    </div>    
                 </div>
             </section>
             <section id="catalog">

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+    color: #21243D;
+}
+h2 {
+    font-size: 56px;
+    padding: 1.5em 0 1.5em 0;
+    text-align: center;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #21243D;
+}
+header {
+    padding: 0 5% 0 5%;
+    min-height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu ul {
+   display: flex;
+}
+.menu ul li {
+  margin: 20px 20px;
+  font-size: 1.3em;
+}
+.menu ul li a:hover {
+    border-bottom: 2px solid #FF7C7C;
+}
+.logo {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+}
+
+/* перевірити все ще раз зкопійоіване*/
+
+.slider{
+  height:800px;
+  position:relative;
+  max-width:90%;
+  margin:0 auto;
+}
+.cover{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 0.8;
+  background:url('../img/girl_with_book.jpg');
+  background-size:cover;
+  }
+.item-2{
+  background:url('../img/girl_on_hammock.jpg');
+   background-size:cover;
+}
+.item-3{
+  background:url('../img/couple_on_hammock.jpg');
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 0.8;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 0.8;
+  }
+/* перевірити все ще раз зкопійоіване*/
+
+.cover_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF; 
+    font-size: 24px;
+}
+.cover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cover_text h1{
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+
+.container_offer{
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+ }
+.offer_box{
+    width: calc(1/3*100%);  
+    margin: 0 50px;  
+}
+.offer_box img{
+    max-width: 300px;
+}
+
