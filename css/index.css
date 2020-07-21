@@ -203,3 +203,9 @@ header .menu ul {
     max-width: 300px;
     max-height: 300px;
 }
+ @media(max-width:991px){
+    .container_offer {grid-template-columns: 1fr 1fr; 
+}}
+ @media(max-width:767px){
+    .container_offer {grid-template-columns: 1fr; 
+}}
