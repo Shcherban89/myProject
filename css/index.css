@@ -184,6 +184,11 @@ header .menu ul {
     max-width: 350px;
     border-radius: 5px;
 }
+.offer_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .products{
     display:grid;
     display: -moz-grid;
@@ -193,19 +198,18 @@ header .menu ul {
 .product_box{
     margin: 0 10px;
 }
-.product_box:nth-child(4){
-    margin: 10px -10px;
-}
-.product_box:nth-child(8){
-    margin: 0 -10px;
-}
 .product_image img{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 230px;
+    max-height: 700px;
 }
  @media(max-width:991px){
-    .container_offer {grid-template-columns: 1fr 1fr; 
+    .products {grid-template-columns: 1fr 1fr; 
 }}
  @media(max-width:767px){
-    .container_offer {grid-template-columns: 1fr; 
+    .products {grid-template-columns: 1fr; 
 }}
+.product_description{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
