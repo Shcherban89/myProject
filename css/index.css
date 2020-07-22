@@ -20,15 +20,13 @@ a {
 	text-decoration: none;
     color: #21243D;
 }
-h2 {
+.name h2{
     font-size: 3.5rem;
-    padding: 1.5em 0 1.5em 0;
-    text-align: center;
 }
 .name{
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 5rem;
 }
 header {
     display: flex;
@@ -42,6 +40,7 @@ header .menu ul {
     padding:0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 1;
 }
 .menu ul li {
@@ -59,7 +58,17 @@ header .menu ul {
 .logo img{
     width: 100px;
 }
- @media(max-width:700px){
+.menu button{    
+    background: #ffffff;
+    padding: .7em 1.2em;
+    font-size: 1.2rem;
+    border: 2px solid #88E1F2; 
+    border-radius: 8px;
+} 
+.menu button:hover { 
+    background:#88E1F2; 
+}
+@media(max-width:700px){
     header ul li:nth-child(1),
     header ul li:nth-child(3),
     header li:nth-child(4)  {
@@ -73,7 +82,6 @@ header .menu ul {
  }
 .container_offer{
     display: grid;
-    display: -moz-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1;
  }
@@ -97,31 +105,40 @@ header .menu ul {
 .offer_text{
     max-width: 350px;
     display:grid;
-    display: -moz-grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 100px 20%;
 }
 .products{
     display:grid;
-    display: -moz-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 3rem;
 }
 .product_image img{
     display:block;
     max-width: 100%;
+    padding-bottom: 10px;
 }
 .product_description{
     display:grid;
-    display: -moz-grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30px 30px 200px 30px;
+    grid-template-rows: 12% 12% 200px 1fr;
 
 }
 .product_button{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.product_button button{    
+    background: #000033;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 2px solid  #000033; 
+    border-radius: 8px;
+    color: #ffffff;
+} 
+.product_button button:hover { 
+    color:#FFD082; 
 }
  @media(max-width:1000px){
     .products {grid-template-columns: 1fr 1fr 1fr;}
@@ -134,7 +151,6 @@ header .menu ul {
 }
 .contacts_container{
     display:grid;
-    display: -moz-grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
     background-color: #88E1F2;
