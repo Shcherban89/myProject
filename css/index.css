@@ -26,7 +26,7 @@ a {
 .name{
     font-size: 1.5rem;
     text-align: center;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 header {
     display: flex;
@@ -83,13 +83,17 @@ header .menu ul {
 .container_offer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
  }
  @media(max-width:980px){
-    .container_offer {grid-template-columns: 1fr 1fr; }
+    .container_offer {
+        grid-template-columns: 1fr 1fr; 
+    }
  }
 @media(max-width:760px){
-    .container_offer {grid-template-columns: 1fr; }
+    .container_offer {
+        grid-template-columns: 1fr; 
+    }
  }
 .offer_box{
     display: flex;
