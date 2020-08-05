@@ -38,20 +38,22 @@ header {
 .logo img{
     width: 100px;
 }
-.menu ul li {
+.navbar ul li {
     font-size: 1.4rem;
     border-bottom: 2px transparent;
 }
-.menu ul li a:hover {
+.navbar ul li a:hover {
     border-bottom: 2px solid #FF7C7C;
 }
-.menu ul li:last-child{    
+.navbar ul li:last-child{    
     background: #ffffff;
     border: 2px solid #88E1F2; 
     border-radius: 8px;
+    text-decoration: none;
 } 
-.menu ul li:last-child:hover { 
+.navbar ul li:last-child:hover { 
     background:#88E1F2; 
+    border-bottom: transparent;
 }
 .carousel-inner h1{
     font-size: 5rem;
