@@ -286,3 +286,53 @@ iframe{
         grid-template-columns: 1fr; 
     }
 }
+.countdown {
+    color: #21243D;;
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+}
+
+.countdown-number {
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #FF7C7C
+}
+
+.countdown-time {
+    padding: 1rem;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+.coundown-description{
+    text-align: center;
+    padding: 3rem;
+    line-height: 3.5rem;
+}
+.coundown-description .action-header{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.coundown-description .action-text {
+    font-size: 1.3rem;
+}
+@media(max-width:760px){
+    .countdown {
+        font-size: 2.5rem; 
+        padding: 0.7rem;
+    }
+}
+@media(max-width:480px){
+    .countdown {
+        font-size: 1.7rem; 
+        padding: 0.7rem;
+    }
+}
