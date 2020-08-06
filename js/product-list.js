@@ -12,7 +12,7 @@ class ProductList {
     let productListDomString = '';
     const products = await this.productService.getProducts();
     products.forEach(product => {
-      productListDomString += `<div class="product_box">
+      productListDomString += `<div class="product_box wow animate__bounceIn" data-wow-duration="2s"  data-wow-offset="120"">
                   <div class="card product">
                     <img class="card-img-top" src="img/${product.image}" 
                         alt="${product.title}">
