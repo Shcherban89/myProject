@@ -7,43 +7,50 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     </head>
     <body>
         <header>
-        <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Логотип Hammock store">
-                </a>
-                <a href="index.html">
-                    <p>
-                        магазин<br>гамаків
-                    </p>
-                </a>
-        </div>            
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#about_us">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#catalog">Каталог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#promotions">Акції</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#contacts">Контакти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Кошик</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Логотип Hammock store">
+                    </a>
+                    <a href="index.html">
+                        <p>
+                            магазин<br>гамаків
+                        
+                        </p>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about_us">Про нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#catalog">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#promotions">Акції</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#contacts">Контакти</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+                                <i class="fas fa-shopping-cart"></i>
+                                Кошик<span id="cart-badge" class="badge badge-light"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
             <section id="covers">
@@ -58,7 +65,7 @@
                             <div class="carousel-item active">
                                 <img src="img/girl_with_book.jpg" class="d-block w-100" alt="жінка з книгою на гамаку Hammock Store">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h1>Hammock store</h1>
+                                    <h1 class="wow fadeInDown">Hammock store</h1>
                                     <p>знайди ідеальний для тебе</p>
                                     <a class="button" href="#catalog">каталог</a>
                                 </div>
@@ -93,12 +100,12 @@
             </section>
             <section id="offers">
                 <div class="container-xl">
-                    <div class="name">
+                    <div class="name wow fadeInLeft" data-wow-offset="200">
                         <h2>Що ми пропонуємо</h2>
                     </div>
                     <div class="card-deck">
-                        <div class="card">
-                            <img src="img/hammock_flat.jpg" class="card-img-top" alt="Гамак у кімнаті">
+                        <div class="card wow fadeInLeft" data-wow-offset="300" alt="Гамак у кімнаті">
+                            <img src="img/hammock_flat.jpg" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Каталог товарів</h3>
                                 <p class="card-text">Знайдіть свій  гамак в каталозі.  В нас представлений широкий асортимент товарів бразильського виробника amazonas.</p>
@@ -107,7 +114,7 @@
                                 <a href="#catalog">перейти до каталогу</a>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card card wow fadeInUp" data-wow-offset="300">
                             <img src="img/hammock_plant.jpg" class="card-img-top" alt="Гамак і горшок з квітами">
                             <div class="card-body">
                                 <h3 class="card-title">Гамак на замовлення</h3>
@@ -117,7 +124,7 @@
                                 <a href="#form_order">перейти до замовлення</a>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card card wow fadeInRight" data-wow-offset="300">
                             <img src="img/hammock_on_stair.jpg" class="card-img-top" alt="Гамак на сходах">
                             <div class="card-body">
                                 <h3 class="card-title">Акційні пропозиції</h3>
@@ -132,130 +139,13 @@
             </section>
             <section id="catalog">
                 <div class="container">
-                <div class="name">
-                    <h2>Каталог товарів</h2>
-                    <p>Тут зібрані найкращі пропозиції. З найкращих матеріалів. Для найкращих людей.</p>
-                </div>
-                <div class="products">
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-tropic-dream-.jpg" alt="Гамак Amazonas Tropic Dream">
-                        </div>
-                        <div class="product_description">
-                            <p>850 грн 1200 грн</p>
-                            <h4>Amazonas Tropic Dream</h4>
-                            <p>Великий і комфортний гамак. З перекладиною. Виготовлений зі спеціальної , швидковисихаючої тканини. 
-                            Підходить для використання на вулиці, не поглинає вологу.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>  
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-tonga-ocean.jpg" alt="Гамак Amazonas Tobago">
-                        </div>
-                        <div class="product_description">
-                            <p>850 грн 1200 грн</p>
-                            <h4>Amazonas Tobago</h4>
-                            <p>Комфортний гамак з натуральної бавовни. З обох кінців полотно зафіксоване двома пекладинами.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
+                    <div class="name  wow fadeInLeft" data-wow-offset="400">
+                        <h2>Каталог товарів</h2>
+                        <p>Тут зібрані найкращі пропозиції. З найкращих матеріалів. Для найкращих людей.</p>
                     </div>
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-tobago-grande.jpg" alt="Гамак Amazonas Tobago Grande">
-                        </div>
-                        <div class="product_description">
-                            <p>850 грн 1200 грн</p>
-                            <h4>Amazonas Grand</h4>
-                            <p>Комфортний гамак з натуральної бавовни. 
-                            З обох кінців полотно зафіксоване двома пекладинами. Вирізняється класичним та стриманим дизайном.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>  
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-chico-rainbow.jpg" alt="Гамак Chico">
-                        </div>
-                        <div class="product_description">
-                            <p>750 грн 1000 грн</p>
-                            <h4>Amazonas Chico</h4>
-                            <p>Спеціальний яскравий гамак Chico для дітей. Ідеально підходить для кожної спальні та під кожне ліжко-горище. 
-                            Виготовлений з міцного вологостійкого матеріалу, що значно збільшує термін служби.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>  
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-rio.jpg" alt="Гамак Amazonas Rio">
-                        </div>
-                        <div class="product_description">
-                            <p>1050 грн 1500 грн</p>
-                            <h4>Amazonas Rio</h4>
-                            <p>Великий сімейний гамак. При виготовленні використовується жаккардова тканина, що робить гамак не тільки красивим,
-                             а й приємним на дотик. Оздоблюється ручним плетінням.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>  
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-gigante-lava.jpg" alt="Гамак Amazonas Gigante">
-                        </div>
-                        <div class="product_description">
-                            <p>1500 грн 2200 грн</p>
-                            <h4>Amazonas Gigante</h4>
-                            <p>Мабуть найбільший гамак у світі. Близько 6 квадратних метрів тканини та 30 метрів мотузки забезпечить максимальний 
-                            комфорт та зручність для відпочинку кількох людей.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>  
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-fat-hammock-taupe.jpg" alt="Гамак Amazonas Fat">
-                        </div>
-                        <div class="product_description">
-                            <p>1400 грн 2000 грн</p>
-                            <h4>Amazonas Fat</h4>
-                            <p>Найтовстіший і найзручніший гамак у світі - м'який, як справжнє ліжко. Водовідштовхувальний матеріал, стійкий 
-                            проти цвілі, нечутливий до забруднень і легко миється. Можна використовувати з обох сторін.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>  
-                    <div class="product_box">
-                        <div class="product_image">
-                            <img src="img/amazonas-globo.jpg" alt="Гамак Amazonas Globo Chair">
-                        </div>
-                        <div class="product_description">
-                            <p>1800 грн 3200 грн</p>
-                            <h4>Amazonas Globo Chair</h4>
-                            <p>Якісне підвісне крісло, виготовлене з обробленої водостійкої деревини. Водовідштовхувальний матеріал, 
-                            стійкий проти цвілі, нечутливий до забруднень і легко миється. Поставляється з однією пружиною.</p>
-                            <div class="product_button">
-                                <button>детальніше</button>
-                                <button>купити зараз</button>
-                            </div>
-                        </div>   
-                    </div>                        
+                    <div class="row products-container">
+                    <!--Products are dynamically generated here-->
+                    </div>
                 </div>
             </section>
             <section id="contacts">
@@ -271,139 +161,228 @@
                                     <h4>SHOWROOM HAMMOCKS STORE</h4>
                                     <p>
                                         вул. Шамрила 1,<br>м. Київ, 04112, Україна
+                                    
                                     </p>
                                     <p>+38 (063) 987 89 00</p>
-                                    <a>helphammocks.store@gmail.com</a>
+                                    <a href="mailto:helphammocks.store@gmail.com">helphammocks.store@gmail.com</a>
+                                    <div class="icons">
+                                        <a target="_blanc" href="https://www.instagram.com/yulyashcherban/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a target="_blanc" href="https://www.facebook.com/yulya.shcherban">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a target="_blanc" href="mailto:helphammocks.store@gmail.com">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.473438199093!2d30.441353351338456!3d50.46952937937724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdca0adebde9%3A0x1e574291764fdd7c!2z0J_QsNGA0LrQvtCy0L4t0KHRi9GA0LXRhtC60LDRjyDRg9C7LiwgMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1595110941533!5m2!1sru!2sua" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
-                </div>
-            </section>
-            <section id="about_us">
-                <div class="container-xl">
-                    <div class="name">
-                        <h2>Чому ми кращі</h2>
-                        <p>Ми любимо, те що робимо. Ми любимо людей. А люди люблять нас</p>
-                    </div>
-                    <div class="about_us">
-                        <div class="card bg-dark text-white">
-                            <img src="img/woman_on_hammock.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Найкращі матеріали</h3>
-                                <p class="card-text">В процесі виробництва використані, лише натуральні тканини та деревина. Для максимального комфорту та зручності</p>
-                            </div>
-                        </div>
-                        <div class="card bg-dark text-white">
-                            <img src="img/hammock_sea.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Великий асортимент</h3>
-                                <p class="card-text">Різноманітний асортимент товарів, здатен задовольнити різні потреби різних груп людей</p>
-                            </div>
-                        </div>
-                        <div class="card bg-dark text-white">
-                            <img src="img/hammock_pillow.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Приємні ціни</h3>
-                                <p class="card-text">Тільки найкращі цінові пропозиції, постійні знижки. Ми покликані зробити ваш відпочинок вдома максимально комфортним</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="promotions">
-                <div class="container-xl">
-                    <div class="name">
-                        <h2>Безкоштовна доставка</h2>
-                    </div>
-                    <div id="countdown" class="countdown">
-                        <div class="countdown-number">
-                            <span class="days countdown-time"></span>
-                            <span class="countdown-text">Days</span>
-                        </div>
-                        <div class="countdown-number">
-                            <span class="hours countdown-time"></span>
-                            <span class="countdown-text">Hours</span>
-                        </div>
-                        <div class="countdown-number">
-                            <span class="minutes countdown-time"></span>
-                            <span class="countdown-text">Minutes</span>
-                        </div>
-                        <div class="countdown-number">
-                            <span class="seconds countdown-time"></span>
-                            <span class="countdown-text">Seconds</span>
-                        </div>
-                    </div>
-                    <div class="coundown-description">
-                        <p class="action-header">Зроби замовлення на суму від 1000 грн, та отримай безкоштовну доставку</p>
-                        <p class="action-text">Акція триває до: 1 вересня 2020 року.</p>
-                        <a href="#catalog" class="btn btn-dark">зробити замовлення</a>
-                    </div>
-                </div>
-            </section>
-            <section id="form_order">
-                <div class="container-fluid">
-                    <div class="name">
-                        <h2>Хочеш унікальний гамак?</h2>
-                    </div>
-                    <div class="block_form">
-                        <div class="image-container">
-                            <img src="img/hammock_in_room.jpg" alt="підвісний гамак в кімнаті">
-                        </div>
-                        <div class="form-block">
-                            <h3>Хочеш унікальний гамак?</h3>
-                            <p>
-                                Залиши свої контактні дані!<br>Ми зв'яжемось з тобою і обговоримо деталі
-                            </p>
-                            <div class="form">
-                                <form action="https://formspree.io/mdowpvlq" method="POST">
-                                    <label for="fname">Твоє ім'я*</label>
-                                    <input class="form-control" type="text" id="fname" name="name" required>
-                                    <label for="phone_number">Мобільний номер</label>
-                                    <input class="form-control" type="tel" id="phone_number" name="phone_number" pattern="[0-9]{13}" required>
-                                    <label for="email">Email*</label>
-                                    <input class="form-control" type="text" id="email" name="name" required>
-                                    <button class="btn btn-dark" type="submit">Відправити</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container-xl footer">
-                <div class="logo_footer">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Логотип Hammock store">
-                    </a>
-                    <a href="index.html">
-                        <h4>магазин гамаків</h4>
-                    </a>
-                </div>
-                <div>
-                    <h5>Телефони</h5>
-                    <ul>
-                        <li>+38 (093) 567 89 00</li>
-                        <li>+38 (095) 567 89 03</li>
-                        <li>+38 (096) 567 55 00</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Напишіть нам</h5>
-                    <a href="mailto:helphammocks.store@gmail.com">helphammocks.store@gmail.com</a>
+</div></section>
+<section id="about_us">
+    <div class="container-xl">
+        <div class="name">
+            <h2>Чому ми кращі</h2>
+            <p>Ми любимо, те що робимо. Ми любимо людей. А люди люблять нас</p>
+        </div>
+        <div class="about_us">
+            <div class="card bg-dark text-white">
+                <img src="img/woman_on_hammock.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title">Найкращі матеріали</h3>
+                    <p class="card-text">В процесі виробництва використані, лише натуральні тканини та деревина. Для максимального комфорту та зручності</p>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <p>© 2020 All rights Reserved</p>
-                <p>Created by Yuliia_Shcherban</p>
+            <div class="card bg-dark text-white">
+                <img src="img/hammock_sea.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title">Великий асортимент</h3>
+                    <p class="card-text">Різноманітний асортимент товарів, здатен задовольнити різні потреби різних груп людей</p>
+                </div>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
-    </body>
-</html>
+            <div class="card bg-dark text-white">
+                <img src="img/hammock_pillow.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title">Приємні ціни</h3>
+                    <p class="card-text">Тільки найкращі цінові пропозиції, постійні знижки. Ми покликані зробити ваш відпочинок вдома максимально комфортним</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="promotions">
+    <div class="container-xl">
+        <div class="name">
+            <h2>Безкоштовна доставка</h2>
+        </div>
+        <div id="countdown" class="countdown">
+            <div class="countdown-number">
+                <span class="days countdown-time"></span>
+                <span class="countdown-text">Days</span>
+            </div>
+            <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+                <span class="countdown-text">Hours</span>
+            </div>
+            <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <span class="countdown-text">Minutes</span>
+            </div>
+            <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <span class="countdown-text">Seconds</span>
+            </div>
+        </div>
+        <div class="coundown-description">
+            <p class="action-header">Зроби замовлення на суму від 1000 грн, та отримай безкоштовну доставку</p>
+            <p class="action-text">Акція триває до: 1 жовтня 2020 року.</p>
+            <a href="#catalog" class="btn btn-dark">зробити замовлення</a>
+        </div>
+    </div>
+</section>
+<section id="form_order">
+    <div class="container-fluid">
+        <div class="name">
+            <h2>Хочеш унікальний гамак?</h2>
+        </div>
+        <div class="block_form">
+            <div class="image-container">
+                <img src="img/hammock_in_room.jpg" alt="підвісний гамак в кімнаті">
+            </div>
+            <div class="form-block">
+                <h3>Хочеш унікальний гамак?</h3>
+                <p>
+                    Залиши свої контактні дані!<br>Ми зв'яжемось з тобою і обговоримо деталі
+                            
+                </p>
+                <div class="form">
+                    <form action="https://formspree.io/mdowpvlq" method="POST">
+                        <label for="fname">Твоє ім'я*</label>
+                        <input class="form-control" type="text" id="fname" name="name" placeholder="Іван" required>
+                        <label for="phone_number">Мобільний номер</label>
+                        <input class="form-control" type="tel" id="phone_number" name="phone_number" pattern="[0-9]{12}" placeholder="380638900000" required>
+                        <label for="email">Email*</label>
+                        <input class="form-control" type="text" id="email" name="name" placeholder="helphammocks.store@gmail.com" required>
+                        <button class="btn btn-dark" type="submit">Відправити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="container-xl footer">
+        <div class="logo_footer">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Логотип Hammock store">
+            </a>
+            <a href="index.html">
+                <h4>магазин гамаків</h4>
+            </a>
+        </div>
+        <div>
+            <h5>Телефони</h5>
+            <ul>
+                <li>+38 (093) 567 89 00</li>
+                <li>+38 (095) 567 89 03</li>
+                <li>+38 (096) 567 55 00</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Напишіть нам</h5>
+            <a href="mailto:helphammocks.store@gmail.com">helphammocks.store@gmail.com</a>
+            <div class="icons">
+                <a target="_blanc" href="https://www.instagram.com/yulyashcherban/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a target="_blanc" href="https://www.facebook.com/yulya.shcherban">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a target="_blanc" href="mailto:helphammocks.store@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2020</p>
+        <p>
+            Created by <a target="_blanc" href="https://www.facebook.com/yulya.shcherban">Yuliia_Shcherban</a>
+        </p>
+    </div>
+</footer>
+<!-- Modal Product Info -->
+<div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productInfoLabel">Інформація про товар</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">закрити</button>
+                <button class="btn btn-dark buy" data-id="id">купити</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Cart -->
+<div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartLabel">Кошик</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-product-list-container"></div>
+                <hr>
+                <div class="container">
+                    <form class="form-contacts">
+                        <div class="form-group row">
+                            <label for="client-name" class="col-4 col-form-label">Ваше ім'я:</label>
+                            <input class="form-control col-8" type="text" id="client-name" required>
+                        </div>
+                        <div class="form-group row">
+                            <label for="client-email" class="col-4 col-form-label">Ваш email:</label>
+                            <input class="form-control col-8" type="email" id="client-email" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">закрити</button>
+                <button class="btn btn-dark order">замовлення</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<script async src="js/alert-window.js"></script>
+<script defer src="js/products-service.js"></script>
+<script defer src="js/cart.js"></script>
+<script defer src="js/product-list.js"></script>
+<script defer src="js/countdown.js"></script>
+<script defer src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body></html>
