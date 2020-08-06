@@ -390,7 +390,7 @@ iframe{
 }
  @media(max-width:768px){
     .products-container {grid-template-columns: 1fr;}
-    .product_description{grid-template-rows: 12% 9rem 12% 1fr;}
+    .product_description{grid-template-rows:  12% 1fr 18% 20%;}
 }
 .alert {
     position: fixed;
