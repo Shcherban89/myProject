@@ -12,7 +12,7 @@ class ProductList {
     let productListDomString = '';
     const products = await this.productService.getProducts();
     products.forEach(product => {
-      productListDomString += `<div class="product_box wow animate__bounceIn" data-wow-duration="2s"  data-wow-offset="120"">
+      productListDomString += `<div class="product_box">
                   <div class="card product">
                     <img class="card-img-top" src="img/${product.image}" 
                         alt="${product.title}">
@@ -20,7 +20,7 @@ class ProductList {
                       <h5 class="card-title">${product.title}</h5>
                       <p class="card-text">${product.description}</p>
                         <p class="price-hammock">${product.price} грн | <span>${product.old_price}</span> грн</p>
-                      <div class="product_button">
+                      <div class="product_button wow animate__bounceIn" data-wow-duration="2s"  data-wow-offset="120">
                         <button class="btn btn-info" data-toggle="modal"
                           data-target="#productInfoModal" data-id="${product.id}">
                           детальніше
